@@ -5,7 +5,9 @@ An employee directory but with react instead of Node.
 
 ## Overview
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+For this assignment, I created an employee directory with React. I broke up the application's UI into components, managed component state, and responded to user events.
+
+<img src="./src/components/images/screenshot.png" width="100%">
 
 ## User Story
 
@@ -15,12 +17,6 @@ For this assignment, you'll create a employee directory with React. This assignm
 
 An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
-## Acceptance Criteria
+## Acknowledgements
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
-
-The user should be able to:
-
-  * Sort the table by at least one category
-
-  * Filter the users by at least one property.
+So I accidentally completely trivialized this homework by finding and using material-table's and material-ui's React components. I found a table template that suited my needs and I hard-coded employee data into it. Took like, 10 minutes max. Sorry! But THANK YOU [material-ui](https://material-ui.com/) for helping me build everything so quickly!
