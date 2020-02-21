@@ -3,13 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Table from "./components/Table";
+import EnhancedTable from "./components/EnhancedTable";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Table />
+      <EnhancedTable />
       <Footer />
     </div>
   );

@@ -1,0 +1,58 @@
+{
+    "name": "React Employee Directory App",
+    "description": "This app sorts and organizes employee data in a table.",
+    "keywords": [
+        "employee directory",
+        "react",
+        "bootcamp",
+        "school"
+    ],
+    "language": "reactjs",
+    "website": "https://current-weather-world.herokuapp.com/",
+    "repository": "https://github.com/cml2377/React-Employee-Directory",
+    "scripts": {
+        "postdeploy": "bundle exec rake bootstrap"
+    },
+    "env": {
+        "SECRET_TOKEN": {
+            "description": "A secret key for verifying the integrity of signed cookies.",
+            "generator": "secret"
+        },
+        "WEB_CONCURRENCY": {
+            "description": "The number of processes to run.",
+            "value": "5"
+        }
+    },
+    "formation": {
+        "web": {
+            "quantity": 2,
+            "size": "Performance-M"
+        }
+    },
+    "image": "heroku/reactjs",
+    "addons": [
+        "openredis",
+        {
+            "plan": "mongolab:shared-single-small",
+            "as": "MONGO"
+        },
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "version": "9.5"
+            }
+        }
+    ],
+    "buildpacks": [
+        {
+            "url": "mars/create-react-app"
+        }
+    ],
+    "environments": {
+        "test": {
+            "scripts": {
+                "test": "bundle exec rake test"
+            }
+        }
+    }
+}
